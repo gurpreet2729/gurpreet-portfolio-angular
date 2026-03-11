@@ -63,3 +63,35 @@
   color: #d1d5db;
   line-height: 1.7;
 }
+
+@media (max-width: 992px) {
+  .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 70px 20px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .about-text,
+  .about-note {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+}
